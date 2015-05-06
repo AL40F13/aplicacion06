@@ -21,10 +21,10 @@ document.addEventListener("deviceready",function(){
 	$('#listado').append("<p> Su aplicacion se pauso </p>");
 	});//apped pause
 	document.addEventListener("resume",function (){
-	$('#listado').apped("<p> Se reinicio su aplicacion </p>");
+	$('#listado').append("<p> Se reinicio su aplicacion </p>");
 	});//apped resume
 	$(window).on ('orientationchange',function (e){
-		$('#listado').apped("<p>Orientacion: " + e.orientation + "</p>")
+		$('#listado').append("<p>Orientacion: " + e.orientation + "</p>")
 	});//window
 }); 
 });
